@@ -19,7 +19,7 @@ public class TC_DWS_003_Test extends BaseClass{
 		hp=new HomePage(driver);
 		driver.findElement(By.xpath("//a[text()='14.1-inch Laptop']/../..//input[@value='Add to cart']")).click();
 		boolean msgStatus = hp.getAddTocartMsg().isDisplayed();
-		Assert.assertEquals(msgStatus, false,"Product failed to add to the cart");
+		Assert.assertEquals(msgStatus, true,"Product failed to add to the cart");
 		test.log(Status.PASS, "Product has been added to cart");
 		wait.until(ExpectedConditions.invisibilityOf(hp.getAddTocartMsg()));
 	}
