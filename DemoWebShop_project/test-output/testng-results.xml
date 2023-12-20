@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-20T11:23:45 IST" name="Default suite" finished-at="2023-12-20T11:23:54 IST" duration-ms="8492">
+  <suite started-at="2023-12-20T14:21:30 IST" name="Default suite" finished-at="2023-12-20T14:21:43 IST" duration-ms="13475">
     <groups>
       <group name="system">
-        <method signature="TC_DWS_003_Test.addToCart()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" name="addToCart" class="shoppingcart.TC_DWS_003_Test"/>
+        <method signature="TC_DWS_004_Test.removeFromCart()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" name="removeFromCart" class="shoppingcart.TC_DWS_004_Test"/>
       </group> <!-- system -->
     </groups>
-    <test started-at="2023-12-20T11:23:45 IST" name="Default test" finished-at="2023-12-20T11:23:54 IST" duration-ms="8492">
-      <class name="shoppingcart.TC_DWS_003_Test">
-        <test-method is-config="true" signature="configReports()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:45 IST" name="configReports" finished-at="2023-12-20T11:23:45 IST" duration-ms="203" status="PASS">
+    <test started-at="2023-12-20T14:21:30 IST" name="Default test" finished-at="2023-12-20T14:21:43 IST" duration-ms="13475">
+      <class name="shoppingcart.TC_DWS_004_Test">
+        <test-method is-config="true" signature="configReports()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:29 IST" name="configReports" finished-at="2023-12-20T14:21:30 IST" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configReports -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:45 IST" name="browserSetup" finished-at="2023-12-20T11:23:49 IST" duration-ms="4020" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:30 IST" name="browserSetup" finished-at="2023-12-20T14:21:36 IST" duration-ms="6423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,149 +25,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:49 IST" name="login" finished-at="2023-12-20T11:23:52 IST" duration-ms="2169" status="PASS">
+        <test-method is-config="true" signature="login(java.lang.reflect.Method)[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:36 IST" name="login" finished-at="2023-12-20T14:21:40 IST" duration-ms="3994" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void shoppingcart.TC_DWS_003_Test.addToCart()]]>
+                <![CDATA[public void shoppingcart.TC_DWS_004_Test.removeFromCart()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addToCart()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:52 IST" name="addToCart" finished-at="2023-12-20T11:23:52 IST" duration-ms="584" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Product failed to add to the cart expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Product failed to add to the cart expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1066)
-at org.testng.Assert.assertEquals(Assert.java:1030)
-at shoppingcart.TC_DWS_003_Test.addToCart(TC_DWS_003_Test.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="removeFromCart()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:40 IST" name="removeFromCart" finished-at="2023-12-20T14:21:42 IST" duration-ms="1361" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:52 IST" name="logout" finished-at="2023-12-20T11:23:54 IST" duration-ms="1167" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="/logout" class="ico-logout">...</a> is not clickable at point (1006, 9). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=120.0.6099.110)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae25146b5ca1fa0bb89b84fedef30e4, clickElement {id=93EFB87E37663B509FBCA77B88FE67F9_element_82}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\abhis\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49547/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2ae25146b5ca1fa0bb89b84fedef30e4)] -> link text: Log out]
-Session ID: 2ae25146b5ca1fa0bb89b84fedef30e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout" class="ico-logout">...</a> is not clickable at point (1006, 9). Other element would receive the click: <div id="bar-notification" class="bar-notification success" style="display: block;">...</div>
-  (Session info: chrome=120.0.6099.110)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae25146b5ca1fa0bb89b84fedef30e4, clickElement {id=93EFB87E37663B509FBCA77B88FE67F9_element_82}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\abhis\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49547/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2ae25146b5ca1fa0bb89b84fedef30e4)] -> link text: Log out]
-Session ID: 2ae25146b5ca1fa0bb89b84fedef30e4
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-at com.tricentis.genericutility.BaseClass.logout(BaseClass.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- removeFromCart -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:42 IST" name="logout" finished-at="2023-12-20T14:21:43 IST" duration-ms="1283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:54 IST" name="closeBrowser" finished-at="2023-12-20T11:23:54 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:43 IST" name="closeBrowser" finished-at="2023-12-20T14:21:43 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportBackup()[pri:0, instance:shoppingcart.TC_DWS_003_Test@799f10e1]" started-at="2023-12-20T11:23:54 IST" name="reportBackup" finished-at="2023-12-20T11:23:54 IST" duration-ms="378" status="PASS">
+        <test-method is-config="true" signature="reportBackup()[pri:0, instance:shoppingcart.TC_DWS_004_Test@351d00c0]" started-at="2023-12-20T14:21:43 IST" name="reportBackup" finished-at="2023-12-20T14:21:44 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportBackup -->
-      </class> <!-- shoppingcart.TC_DWS_003_Test -->
+      </class> <!-- shoppingcart.TC_DWS_004_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

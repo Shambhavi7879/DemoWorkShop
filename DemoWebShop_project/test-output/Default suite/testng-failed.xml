@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="shoppingcart.TC_DWS_003_Test">
+      <class name="shoppingcart.TC_DWS_004_Test">
         <methods>
           <include name="login"/>
-          <include name="addToCart"/>
+          <include name="removeFromCart"/>
           <include name="logout"/>
           <include name="browserSetup"/>
           <include name="closeBrowser"/>
           <include name="reportBackup"/>
           <include name="configReports"/>
         </methods>
-      </class> <!-- shoppingcart.TC_DWS_003_Test -->
+      </class> <!-- shoppingcart.TC_DWS_004_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
