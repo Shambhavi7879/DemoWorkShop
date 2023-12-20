@@ -18,6 +18,6 @@ public class TC_DWS_02_Test extends BaseClass{
 	public void loginTest() throws EncryptedDocumentException, IOException {
 		String EXPECTED_TITLE = eLib.getDataFromExcel("Login", 1, 2);
 		Assert.assertEquals(driver.getTitle(), EXPECTED_TITLE,"user failed to login");
-		test.log(Status.PASS, "User logged in successfully");
+		test.log(Status.PASS, "User logged in successfully...");
 	}
 }
